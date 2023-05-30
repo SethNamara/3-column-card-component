@@ -1,0 +1,136 @@
+:root {
+
+    --clr-primary-100: hsl(0, 0%, 95%);
+
+    --clr-secondary-100: hsl(31, 77%, 52%);
+    --clr-secondary-200: hsl(184, 100%, 22%);
+    --clr-secondary-300: hsl(179, 100%, 13%);
+
+    --clr-accent-100: hsla(0, 0%, 100%, 0.75);
+
+
+    --ff-body: 'Lexend Deca', sans-serif;
+    --ff-heading: 'Big Shoulders Display', cursive;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-100: 0.9375rem;
+    --fs-200: 1rem;
+    --fs-300: 1.125rem;
+    --fs-400: 1.25rem;
+    --fs-500: 1.8rem;
+
+}
+
+/* ==== RESET styling ==== */
+
+* {
+    margin: 0;
+}
+
+* ,
+::after, 
+::before {
+    box-sizing: border-box;
+    font: inherit;
+}
+
+img,
+svg,
+image {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==== General styling ==== */
+body {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    color: var(--clr-accent-100);
+    background-color: var(--clr-accent-100);
+    font-size: var(--fs-100);
+}
+
+.container {
+    margin: 0 auto;
+    --border-radius: 8px;
+    max-width: 25rem;
+}
+
+.flex_container {
+    margin: 2.5rem 1rem;
+}
+
+.title {
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-500);
+    color: var(--clr-primary-100);
+    padding: 1.5rem 0;
+}
+
+.description {
+    line-height: 1.7;
+    padding-bottom: 1rem;
+    max-width: 22.5rem;
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-100);
+}
+
+.button {
+    padding: .8rem 1.8rem;
+    border-radius: 100vw;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    outline: 2px solid var(--clr-accent-100);
+    
+}
+
+.flex_left .button{
+    color: var(--clr-secondary-100);
+}
+
+.flex_left .button:hover {
+    background-color: var(--clr-secondary-100);
+    color: var(--clr-accent-100);
+}
+
+.flex_middle .button{
+   color: var(--clr-secondary-200);
+}
+
+.flex_middle .button:hover {
+    background-color: var(--clr-secondary-200);
+    color: var(--clr-accent-100);
+}
+
+.flex_right .button{
+    color: var(--clr-secondary-300);
+}
+
+.flex_right .button:hover {
+    background-color: var(--clr-secondary-300);
+    color: var(--clr-accent-100);
+}
+
+.flex_left {
+    background-color: var(--clr-secondary-100);
+    padding: 2rem 1.5rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.flex_middle {
+    background-color: var(--clr-secondary-200);
+    padding: 2rem 1.5rem;
+}
+
+.flex_right {
+    background-color: var(--clr-secondary-300);
+    padding: 2rem 1.5rem;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
