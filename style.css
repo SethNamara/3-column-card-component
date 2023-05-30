@@ -134,3 +134,29 @@ body {
     padding: 2rem 1.5rem;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
+
+@media (min-width:640px) {
+    .container {
+        max-width: 55rem;
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+
+    .flex_container {
+        display: flex;
+    }
+
+    .flex_left {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    }
+
+    .flex_right {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+   }
+
+   .description {
+    padding-bottom: 4rem;
+    max-width: 50rem;
+   }
+}
